@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:src="@mipmap/user_icon"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_reservation_date"
+        android:text="日期:"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_icon"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_toEndOf="@+id/iv_icon"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+
+    <TextView
+        android:id="@+id/tv_reservation_notice"
+        android:text="时间:"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_reservation_date"
+        android:layout_alignLeft="@+id/tv_reservation_coach"
+        android:layout_alignStart="@+id/tv_reservation_coach"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tv_reservation_coach"
+        android:text="教练: "
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/tv_reservation_notice"
+        android:layout_alignLeft="@+id/tv_reservation_date"
+        android:layout_alignStart="@+id/tv_reservation_date" />
+
+    <TextView
+        android:background="#e1e1e1"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_reservation_coach"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+
+</RelativeLayout>

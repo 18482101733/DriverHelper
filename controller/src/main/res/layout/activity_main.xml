@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_bar"
+            android:background="#3a9797"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <Button
+        android:id="@+id/bt_coach"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/select_style"
+        android:drawableStart="@mipmap/coach"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:gravity="start|center_vertical"
+        android:drawableEnd="@mipmap/arrow"
+        android:text="@string/coach_info_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <Button
+        android:id="@+id/bt_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_style"
+        android:drawableStart="@mipmap/student"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:gravity="start|center_vertical"
+        android:drawableEnd="@mipmap/arrow"
+        android:text="@string/student_info_select" />
+    <Button
+        android:id="@+id/bt_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_style"
+        android:drawableStart="@mipmap/school"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:gravity="start|center_vertical"
+        android:drawableEnd="@mipmap/arrow"
+        android:text="@string/school_manager" />
+
+
+    <Button
+        android:id="@+id/bt_states"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_style"
+        android:drawableStart="@mipmap/states"
+        android:padding="10dp"
+        android:drawablePadding="15dp"
+        android:gravity="start|center_vertical"
+        android:drawableEnd="@mipmap/arrow"
+        android:text="@string/states_manager" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.cduestc.DriverHelper.activity.ReservationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_bar"
+        android:background="#3a9797"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_set_date"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:text="日期: "
+        android:layout_below="@id/tb_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:id="@+id/bt_set_date"
+        android:background="#3a9797"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="设置时间"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/tv_set_date"
+        android:layout_toRightOf="@+id/tv_set_date"
+        android:layout_toEndOf="@+id/tv_set_date"
+        android:layout_marginBottom="-8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+
+    <TextView
+        android:id="@+id/split_one"
+        android:background="#666666"
+        android:layout_below="@id/bt_set_date"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+    <TextView
+        android:id="@+id/tv_rg"
+        android:text="时间段: "
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/split_one"
+        android:layout_alignLeft="@+id/tv_set_date"
+        android:layout_alignStart="@+id/tv_set_date"
+        android:layout_marginTop="20dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_time"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/tv_rg"
+        android:layout_toEndOf="@id/tv_rg"
+        android:layout_below="@id/split_one"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_am"
+            android:text="上午"
+            android:textColor="#666666"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <RadioButton
+            android:id="@+id/rb_pm"
+            android:text="下午"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/split_two"
+        android:background="#e1e1e1"
+        android:layout_below="@+id/tv_rg"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/tv_reservation_am"
+        android:text="剩余人数:"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/split_two"
+        android:layout_toRightOf="@+id/bt_set_date"
+        android:layout_toEndOf="@+id/bt_set_date" />
+
+    <TextView
+        android:id="@+id/tv_reservation_notice"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="时间: 上午"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_reservation_am"
+        android:layout_alignLeft="@+id/tv_rg"
+        android:layout_alignStart="@+id/tv_rg" />
+
+    <TextView
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:text="时间: 下午"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_reservation_notice"
+        android:layout_alignLeft="@+id/tv_reservation_notice"
+        android:layout_alignStart="@+id/tv_reservation_notice"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tv_reservation_pm"
+        android:text="剩余人数:"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/tv_reservation_am"
+        android:layout_alignStart="@+id/tv_reservation_am" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_reservation_pm"
+        android:background="#e1e1e1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <Button
+        android:id="@+id/bt_reservation"
+        android:text="预约"
+        android:background="@drawable/login_button_style"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

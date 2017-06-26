@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/menu_setSecret"
+        android:title="设置密保"
+        />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/menu_config"
+        android:title="修改信息"
+        android:icon="@mipmap/settings"
+        />
+    <item
+        app:showAsAction="never"
+        android:id="@+id/menu_exit"
+        android:title="退出登录"
+        android:icon="@mipmap/exit"
+        />
+</menu>

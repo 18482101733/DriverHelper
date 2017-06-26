@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">驾校管理器</string>
+    <string name="welcome_words_english">Make learning easy?</string>
+    <string name="coach_info_select">教练信息查询</string>
+    <string name="student_info_select">学生信息查询</string>
+    <string name="school_manager">驾校信息管理</string>
+    <string name="reservation_manager">预约管理</string>
+    <string name="states_manager">权限管理</string>
+    <string name="action_search">查找</string>
+</resources>

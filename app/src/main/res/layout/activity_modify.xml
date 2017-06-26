@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3a9797"
+        tools:context="com.cduestc.DriverHelper.activity.ModifyActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_bar"
+            android:background="#3a9797"
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="78dp">
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:text="确认修改"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/iv_user_icon"
+            android:layout_below="@id/tb_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+
+        <ScrollView
+            android:layout_below="@id/iv_user_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#ffffff"
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/EditTextStyle"
+                    android:hint="姓名"
+                    android:drawableLeft="@mipmap/name"
+                    android:drawableStart="@mipmap/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+
+                <EditText
+                    android:id="@+id/et_idNum"
+                    style="@style/EditTextStyle"
+                    android:inputType="number"
+                    android:hint="身份证"
+                    android:drawableLeft="@mipmap/idcard"
+                    android:drawableStart="@mipmap/idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/EditTextStyle"
+                    android:hint="地址"
+                    android:drawableLeft="@mipmap/address"
+                    android:drawableStart="@mipmap/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+                <EditText
+                    android:id="@+id/et_plate_num"
+                    style="@style/EditTextStyle"
+                    android:hint="车牌号"
+                    android:drawableLeft="@mipmap/car"
+                    android:drawableStart="@mipmap/car"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <EditText
+                    android:id="@+id/et_coach_info"
+                    style="@style/EditTextStyle"
+                    android:background="@drawable/edit_style"
+                    android:paddingLeft="5dp"
+                    android:hint="点击输入简介"
+                    android:padding="10dp"
+                    android:maxLines="3"
+                    android:maxLength="100"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</ScrollView>

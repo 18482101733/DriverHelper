@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_below="@id/tb_bar"
+        android:layout_margin="16dp"
+        android:foregroundGravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="姓名:"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_icon"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_toEndOf="@+id/iv_icon"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:text="电话:"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_toEndOf="@+id/iv_icon" />
+
+
+    <TextView
+        android:id="@+id/tv_school"
+        android:text="学校:"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_phone"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_toEndOf="@+id/iv_icon" />
+    
+    <TextView
+        android:id="@+id/split_one"
+        android:layout_below="@id/iv_icon"
+        android:background="#e1e1e1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    
+    <TextView
+        android:id="@+id/tv_address"
+        android:text="地址:"
+        android:layout_below="@id/split_one"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/split_two"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_address"
+        android:background="#e1e1e1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+    <RelativeLayout
+        android:layout_below="@id/split_two"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/my_learning"
+            android:src="@mipmap/my_learning"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_reservation_pm"
+            android:text="@string/my_reservation"
+            android:ems="1"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_toEndOf="@id/my_learning"
+            android:layout_toRightOf="@id/my_learning"
+            android:background="#e1e1e1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/lv_reservation"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/my_learning"
+            android:layout_toEndOf="@id/my_learning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_reservation_dire"
+            android:text="预约信息加载中..."
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+    
+</RelativeLayout>

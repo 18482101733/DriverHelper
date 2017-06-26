@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_coach_icon"
+        android:layout_margin="5dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:id="@+id/tv_coach_name"
+        android:text="姓名:"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#333333"
+        android:layout_toRightOf="@id/iv_coach_icon"
+        android:layout_toEndOf="@id/iv_coach_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_coach_phone"
+        android:text="联系电话:"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_coach_name"
+        android:layout_toRightOf="@+id/iv_coach_icon"
+        android:layout_toEndOf="@+id/iv_coach_icon"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/tv_coach_info"
+        android:text="教练简介:"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="#333333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_coach_phone"
+        android:layout_alignLeft="@+id/tv_coach_phone"
+        android:layout_alignStart="@+id/tv_coach_phone"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:layout_below="@id/tv_coach_info"
+        android:background="#e1e1e1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+
+</RelativeLayout>
